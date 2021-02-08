@@ -4,13 +4,14 @@
         {% include head.html %}
     </head>
 
-    <body class="has-material-sidebar-left">
+    <body>
         <header class="head">
+            {% include header.html %}
             {% include nav.html %}
         </header>
         {% include search.html %}
         <div class="margin">
-            <div class="content">
+            <div class="content full">
                 <div class="content-container">
                     <article>
                         {% if page.type == "vimeo" %}
@@ -27,8 +28,7 @@
                             {% endif %}
                         {% elsif page.type == "image" or page.type == "gallery" %}
                             {% if page.featimg %}
-                                <img class="featimg" src="{{ site.media_folder }}{{ page.featimg }}" alt="{{ page.featimg }}">
-								
+                                <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}{{ page.featimg }}" alt="{{ page.featimg }}">
                             {% endif %}
                         {% elsif page.type == "audio" %}
                             {% if page.audio-embed %}
@@ -47,7 +47,7 @@
                         </div>
                         {% if page.type == "standard" %}
                             {% if page.featimg %}
-                                <img class="featimg" src="{{ site.media_folder }}{{ page.featimg }}" alt="{{ page.featimg }}">
+                                <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}{{ page.featimg }}" alt="{{ page.featimg }}">
                             {% endif %}
                         {% endif %}
                         <div class="post-content">
@@ -84,7 +84,6 @@
                         {% endif %}
                     </div>
                 </div>
-                {% include material-sidebar.html %}
             </div>
         </div>
         {% include footer.html %}

@@ -4,7 +4,7 @@
         {% for image in gallery.images %}
             <b>{{ image.alttext }}</b>
 			
-            <img src="{{ site.media_folder }}/{{ image.filename }}" alt="{{ image.alttext }}">
+            <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ image.filename }}" alt="{{ image.alttext }}">
         {% endfor %}
     {% endfor %}
 </div>

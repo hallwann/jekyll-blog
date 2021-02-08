@@ -4,7 +4,7 @@
         {% include head.html %}
     </head>
 
-    <body class="has-classic-sidebar-left">
+    <body class="has-classic-sidebar-right">
         <header class="head">
             {% include nav.html %}
             {% include header.html %}
@@ -15,7 +15,7 @@
                 <div class="content-container">
                     <article>
                         {% if page.featimg %}
-                            <img class="featimg" src="{{ site.media_folder }}{{ page.featimg }}" alt="{{ page.featimg }}">
+                            <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
                         {% endif %}
 
                         <h1 class="page-title">

@@ -4,10 +4,9 @@
         {% include head.html %}
     </head>
 
-    <body class="has-classic-sidebar-left">
+    <body class="has-material-sidebar-left">
         <header class="head">
             {% include nav.html %}
-            {% include header.html %}
         </header>
         {% include search.html %}
         <div class="margin">
@@ -15,7 +14,7 @@
                 <div class="content-container">
                     <article>
                         {% if page.featimg %}
-                            <img class="featimg" src="{{ site.media_folder }}{{ page.featimg }}" alt="{{ page.featimg }}">
+                            <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
                         {% endif %}
 
                         <h1 class="page-title">
@@ -26,10 +25,9 @@
                         </div>
                     </article>
                 </div>
-                {% include classic-sidebar.html %}
+                {% include material-sidebar.html %}
             </div>
         </div>
         {% include footer.html %}
-        
     </body>
 </html>
