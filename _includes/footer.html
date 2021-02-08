@@ -1,6 +1,6 @@
 <footer>
     <div class="content">
-        <span>&copy; gridster</span>
+        <span>&copy; Brains control center </span>
         <span class="backtotop">back to top</span>
     </div>
 </footer>
@@ -10,8 +10,19 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?d3b231aca52139bf753822eb5ffae368";
+  hm.src = "https://hm.baidu.com/hm.js?00bf711faf23e1c302727de1da016431";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+
+
+$(".post-content img").each(function(){
+	var src = $(this).attr("src");
+	
+	$(this).attr('src','{{ site.media_folder }}'+src);
+});
+
+
 </script>
+

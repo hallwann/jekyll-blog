@@ -10,15 +10,14 @@
 #   email: someone@something.com //--> optional
 
 -
-  id: someone
-  name: Some Person
-  avatar: /profile-pic.jpg
-  bio: this is some more information about the author.
-  facebook: https://www.facebook.com/someone
-  twitter: https://twitter.com/someone
-  instagram: http://instagram.com/someone
-  email: someone@something.com
+  id: howwant
+  name: www.howwant.com
+  avatar: https://images.upare.com/apps/upare/img/logo.png
+  bio: Posted by howwant.
+  facebook: https://www.facebook.com/howwant
+  twitter: https://twitter.com/howwant
+  instagram: http://instagram.com/howwant
+  email: webmaster@howwant.com
 -
-  id: person
-  avatar: /profile-pic.jpg
-  bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quidem.
+  id: quote
+  

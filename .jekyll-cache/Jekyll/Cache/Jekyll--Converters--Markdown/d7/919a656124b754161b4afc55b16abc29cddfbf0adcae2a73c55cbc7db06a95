@@ -1,0 +1,87 @@
+I"U<p>An alternative to the simple gallery would be this version, which displays the post ins a lightbox.
+The setup basically is the same, the include makes all the difference.</p>
+
+<p>Galleries are defined in a data-sheet, set type and gallery-id in front matter and include <code class="language-plaintext highlighter-rouge">gallery_lightbox.html</code> within the content.
+<br /></p>
+
+<h6 id="front-matter">front matter</h6>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post-full</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">gallery</span>
+<span class="na">gallery</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">images</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-1.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Bloom Flat</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-2.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Bloom</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-3.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Blossom in a Star</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-4.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Blossom</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-5.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Bubbly Bloom</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-6.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Rays of Gold</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-7.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Exotic</span>
+      <span class="pi">-</span> <span class="na">filename</span><span class="pi">:</span> <span class="s">gallery-8.jpg</span>
+        <span class="na">alttext</span><span class="pi">:</span> <span class="s">Filled out</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<h6 id="post-content">post content</h6>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>gallery_lightbox.html<span class="w"> </span><span class="p">%}</span>
+
+</code></pre></div></div>
+
+<!-- Gallery with lightbox -->
+<div class="masonry">
+    
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-1.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-1.jpg" alt="Bloom Flat" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-2.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-2.jpg" alt="Bloom" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-3.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-3.jpg" alt="Blossom in a Star" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-4.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-4.jpg" alt="Blossom" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-5.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-5.jpg" alt="Bubbly Bloom" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-6.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-6.jpg" alt="Rays of Gold" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-7.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-7.jpg" alt="Exotic" />
+            </a>
+        
+            <a href="https:/www.local.upare.com/tools/images/quote?url=/gallery-8.jpg" data-imagelightbox="f" class="noline">
+			
+			 <img src="https:/www.local.upare.com/tools/images/quote?url=gallery-8.jpg" alt="Filled out" />
+            </a>
+        
+    
+</div>
+:ET
