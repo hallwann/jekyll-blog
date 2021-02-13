@@ -23,7 +23,7 @@ $(".post-content img").each(function(){
 	
 	var host = hostname(src);
 	
-	if(host != '{{ site.media_server }}'){
+	if(host !=null && host != '{{ site.media_server }}'){
 	
 		$(this).attr('src','{{ site.media_folder }}'+src);
 	}
