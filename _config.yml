@@ -14,7 +14,8 @@ category_dir: /category
 author_dir: /author
 author_title_prefix: 'Posted by '
 media_folder: http://www.upare.net/tools/images/quote?url=
-media_server: https://hello-quote.stor.sinaapp.com
+#media_server: https://hello-quote.stor.sinaapp.com
+media_server: http://img.upare.net
 author_default_avatar: /profile-pic.jpg
 tumblr: "#"
 pinterest: "#"
