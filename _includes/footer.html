@@ -15,13 +15,13 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
-
+$("#SOHUCS").attr("sid",window.location.pathname);
 
 $(".post-content img").each(function(){
 
 	var src = $(this).attr("src");
 	
-	var host = hostname(src);
+	var host = getHostname(src);
 	
 	if(host !=null && host != '{{ site.media_server }}'){
 	
@@ -30,7 +30,7 @@ $(".post-content img").each(function(){
 	
 });
 
-function hostname(url) {
+function getHostname(url) {
 	var m = url.match(/^(http|https):\/\/[^/]+/);
 	return m ? m[0] : null;
 }
