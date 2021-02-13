@@ -18,11 +18,22 @@ var _hmt = _hmt || [];
 
 
 $(".post-content img").each(function(){
+
 	var src = $(this).attr("src");
 	
-	$(this).attr('src','{{ site.media_folder }}'+src);
+	var host = hostname(src);
+	
+	if(host != '{{ site.media_server }}'){
+	
+		$(this).attr('src','{{ site.media_folder }}'+src);
+	}
+	
 });
 
+function hostname(url) {
+	var m = url.match(/^(http|https):\/\/[^/]+/);
+	return m ? m[0] : null;
+}
 
 </script>
 
