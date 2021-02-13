@@ -13,7 +13,7 @@ tag_dir: /tag
 category_dir: /category
 author_dir: /author
 author_title_prefix: 'Posted by '
-media_folder: https://www.local.upare.com/tools/images/quote?url=
+media_folder: http://www.upare.net/tools/images/quote?url=
 media_server: https://hello-quote.stor.sinaapp.com
 author_default_avatar: /profile-pic.jpg
 tumblr: "#"
