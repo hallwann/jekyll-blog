@@ -1,7 +1,7 @@
 full_rebuild: true
 name: Brains.cc
 description: Brains control center - Artificial intelligence and deep learning blogs
-destination: _blog_html
+destination: ../_blog_html
 url: #place url
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
@@ -41,7 +41,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md,  .jekyll-cache]
+exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, _blog_html, .jekyll-cache]
 
 # prose.io configurations
 prose:
