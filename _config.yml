@@ -41,7 +41,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, blog_html, .jekyll-cache]
+exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, docs, .jekyll-cache]
 
 # prose.io configurations
 prose:
