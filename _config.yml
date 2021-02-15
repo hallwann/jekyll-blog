@@ -2,7 +2,7 @@ full_rebuild: true
 name: Brains.cc
 description: Brains control center - Artificial intelligence and deep learning blogs
 destination: ../docs
-url: #place url
+url: //brains.cc
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
 paginate: 8
