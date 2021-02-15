@@ -4,7 +4,8 @@ description: Brains control center - Artificial intelligence and deep learning b
 destination: docs
 url: #
 baseurl: #place folder name if site is served in subfolder
-permalink: /:title/
+#permalink: /:title/
+permalink: /category/:categories/:year-:month-:day-:title.html
 paginate: 8
 paginate_path: /page/:num/
 infinite_scroll: true #change to false if you want to use pagination
