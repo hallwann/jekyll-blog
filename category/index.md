@@ -3,4 +3,4 @@ layout: page-material-sidebar-right
 title: Category
 ---
 #### All categories
-{% include monthly_archive.html %}
+{% include category_list.html %}
