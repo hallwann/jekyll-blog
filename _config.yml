@@ -14,9 +14,9 @@ tag_dir: /tag
 category_dir: /category
 author_dir: /author
 author_title_prefix: 'Posted by '
-media_folder: http://www.upare.net/tools/images/quote?url=
+media_folder: http://www.upare.net/tools/images/quote?savepath=quoteimg/brainscc&url=
 #media_server: https://hello-quote.stor.sinaapp.com
-media_server: http://img.upare.net
+media_server: http://www.upare.net
 author_default_avatar: /profile-pic.jpg
 tumblr: "#"
 pinterest: "#"
@@ -42,7 +42,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, .jekyll-cache]
+exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, docs,.jekyll-cache]
 
 # prose.io configurations
 prose:

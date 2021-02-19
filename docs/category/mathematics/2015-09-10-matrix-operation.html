@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-<title>Brains.cc - Tag </title>
+<title>Brains.cc - 理解矩阵运算 </title>
 
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:500,600' rel='stylesheet' type='text/css'>
@@ -13,7 +13,7 @@
 
     </head>
 
-    <body class="has-material-sidebar-right">
+    <body class="has-material-sidebar-left">
         <header class="head">
             <!-- menu, we did go with a static one, you can build a dynamic one, just google a little around -->
 <div class="main-menu">
@@ -146,28 +146,125 @@
                     <article>
                         
 
-                        <h1 class="page-title">
-                            Tag
+                        <h1 class="post-title">
+                            理解矩阵运算
                         </h1>
-                        <div class="post-content">
-                            <h4 id="all-tags">All tags</h4>
-<ul class="category-list">
-    
-    
-        
-            <li><a href="/category/mathematics">mathematics</a></li>
-        
-            <li><a href="/category/deeplearning">deeplearning</a></li>
-        
-            <li><a href="/category/image">image</a></li>
-        
-    
-    
-</ul>
+                        <div class="meta">
+                            
 
+    <span class="author">Posted by
+        
+        
+    </span>
+
+ &bull;
+                            <span class="date">
+                                Published on September 10, 2015
+                            </span>
+                        </div>
+                        
+                            
+                                <img class="featimg" src="http://www.upare.net/tools/images/quote?savepath=quoteimg/brainscc&url=http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090114.jpg" alt="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090114.jpg">
+                            
+                        
+                        <div class="post-content">
+                            <p>刚学的时候，还蛮简单的，矩阵加法就是相同位置的数字加一下。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090102.png" alt="img" /></p>
+
+<p>矩阵减法也类似。</p>
+
+<p>矩阵乘以一个常数，就是所有位置都乘以这个数。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090103.png" alt="img" /></p>
+
+<p>但是，等到矩阵乘以矩阵的时候，一切就不一样了。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090104.png" alt="img" /></p>
+
+<p>这个结果是怎么算出来的？</p>
+
+<p>教科书告诉你，计算规则是，第一个矩阵第一行的每个数字（2和1），各自乘以第二个矩阵第一列对应位置的数字（1和1），然后将乘积相加（ 2 x 1 + 1 x 1），得到结果矩阵左上角的那个值3。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090105.gif" alt="img" /></p>
+
+<p>也就是说，结果矩阵第m行与第n列交叉位置的那个值，等于第一个矩阵第m行与第二个矩阵第n列，对应位置的每个值的乘积之和。</p>
+
+<p>怎么会有这么奇怪的规则？</p>
+
+<p>我一直没理解这个规则的含义，导致《线性代数》这门课就没学懂。研究生时发现，线性代数是向量计算的基础，很多重要的数学模型都要用到向量计算，所以我做不了复杂模型。这一直让我有点伤心。</p>
+
+<p>前些日子，受到<a href="https://nolaymanleftbehind.wordpress.com/2011/07/10/linear-algebra-what-matrices-actually-are/">一篇文章</a>的启发，我终于想通了，矩阵乘法到底是什么东西。关键就是一句话，<strong>矩阵的本质就是线性方程式，两者是一一对应关系。</strong>如果从线性方程式的角度，理解矩阵乘法就毫无难度。</p>
+
+<p>下面是一组线性方程式。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090106.png" alt="img" /></p>
+
+<p>矩阵的最初目的，只是为线性方程组提供一个简写形式。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090107.png" alt="img" /></p>
+
+<p>老实说，从上面这种写法，已经能看出矩阵乘法的规则了：系数矩阵第一行的2和1，各自与 x 和 y 的乘积之和，等于3。不过，这不算严格的证明，只是线性方程式转为矩阵的书写规则。</p>
+
+<p>下面才是严格的证明。有三组未知数 x、y 和 t，其中 x 和 y 的关系如下。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090108.png" alt="img" /></p>
+
+<p>x 和 t 的关系如下。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090109.png" alt="img" /></p>
+
+<p>有了这两组方程式，就可以求 y 和 t 的关系。从矩阵来看，很显然，只要把第二个矩阵代入第一个矩阵即可。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090110.png" alt="img" /></p>
+
+<p>从方程式来看，也可以把第二个方程组代入第一个方程组。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090111.png" alt="img" /></p>
+
+<p>上面的方程组可以整理成下面的形式。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090112.png" alt="img" /></p>
+
+<p>最后那个矩阵等式，与前面的矩阵等式一对照，就会得到下面的关系。</p>
+
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090113.png" alt="img" /></p>
+
+<p>矩阵乘法的计算规则，从而得到证明。</p>
+
+<blockquote>
+  <p>http://www.ruanyifeng.com/blog/2015/09/matrix-multiplication.html</p>
+</blockquote>
 
                         </div>
+                        
+                        <div class="catsandtags">
+                            
+                            <span class="category">
+                                <span class="name">categories:</span>
+                                mathematics
+                            </span>
+                            
+                            
+                                &bull;
+                            
+                            
+                            <span class="tags">
+                                <span class="name">tags:</span>
+                                
+                                    <a href="/tag/matrix">matrix</a>
+                                
+                            </span>
+                            
+                        </div>
+                        
                     </article>
+                    <div class="post-nav">
+                        
+                        
+                        <a class="btn next" href="/category/deeplearning/2021-02-05-reduced-neural-network-size-six-times-without-post-training.html"><span class="short">next </span><span class="long">post </span><i class="fa fa-angle-right"></i></a>
+                        
+                    </div>
                 </div>
                 <div class="sidebar material-sidebar">
   
@@ -859,6 +956,15 @@
     </div>
     
 </div>
+				
+<div id="SOHUCS" sid=""></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+	window.changyan.api.config({
+	appid: 'cyvj1zDpk',
+	conf: 'prod_b9c0041535f8ae49887b134ea9cc42ec'
+	});
+</script>
             </div>
         </div>
         <footer>

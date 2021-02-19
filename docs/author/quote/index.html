@@ -783,24 +783,56 @@
     
         
                 
-				<a href="/category/deeplearning/2021-02-07-google-ai-in-ML-and-TPU.html" class="noline">
+				<a href="/category/image/2021-02-18-cat-mapping.html" class="noline">
 				
                    
-                    <img src="http://www.upare.net/tools/images/quote?url=https://image.jiqizhixin.com/uploads/editor/6c331abc-cba6-419e-bb72-07b3454a86cb/640.png">
+                    <img src="http://www.upare.net/tools/images/quote?savepath=quoteimg/brainscc&url=http://www.jiamisoft.com/blog/wp-content/uploads/2013/10/1c409.png">
                     
                 </a>
 				
         
     
-    <span class="date">February 07, 2021</span>
-    <a href="/category/deeplearning/2021-02-07-google-ai-in-ML-and-TPU.html">
-        <h1>机器学习与流体动力学：谷歌AI利用「ML+TPU」实现流体模拟数量级加速</h1>
+    <span class="date">February 18, 2021</span>
+    <a href="/category/image/2021-02-18-cat-mapping.html">
+        <h1>Arnold变换</h1>
     </a>
-    <p class="post-content">谷歌 AI 最近一项研究表明，利用机器学习和硬件加速器能够改进流体模拟，且不损害准确率或泛化性能。 流体数值模拟对于建模多种物理现象而言非常重要，如天气、气候、空气动力学和等离子体物理学。流体可以用纳维 - 斯托克斯方程来描述，但大规模求解这类方程仍属难题，受限于解决最小时空特征的计算成本。这就带来了准确率和易处理性之间的权衡。 ![img](https://image.jiqizhixin.com/uploads/editor/6c331abc-cba6-419e-bb72-07b3454a86cb/640.png) *不可压缩流体通常由如上纳维 - 斯托克斯方程来建模。* 最近，来自谷歌 AI 的研究人员利用端到端深度学习改进计算流体动力学（CFD）中的近似，以建模二维涡流。对于湍流的直接数值模拟（direct numerical simulation,...</p>
+    <p class="post-content">在数字水印方案中，单纯地用各种信息隐藏加密算法对秘密信息进行加密是不安全的，因为攻击者只要破解了加密算法，就可能直接提取出秘密信息。针对这一点，我们提出在秘密信息隐藏之前，先对其进行置乱处理，使其失去本身原有的面目，再隐藏到载体中，以确保信息的安全性。以Fibonacci变换和Arnold变换的实验结果阐述了数字图像置乱方法在数字水印中的作用，并提了出一种利用Arnold反变换恢复图像的方法。 **一、数字图像置乱的目的** 到目前为止，比较成熟的信息隐藏算法基本上都是以图像作为载体的。图像置乱，顾名思义，就是把图像打乱，隐藏原始图像的真实内容。数字图像置乱和信息文件加密思想类似，它主要是通过对数字图像的像素位置做变换来“扰乱”图像，使其变得面目全非、杂乱无章，从而隐藏图像所要表达的真实信息。图像置乱可以达到两个目的： **1、加密处理** 图像置乱变换是一种基于内容的图像加密方法，与不知道密钥对已加密信息进行解密一样，倘若不知道图像置乱所采用的算法，同样难以恢复原始图像的信息。 **2、增强图像伪装的鲁棒性** 置乱技术作为信息隐藏的预处理手段，可以大大增强图像信息伪装的鲁棒性。主要体现在3个方面： ①图像置乱以后，将得到一幅杂乱无序的图像，没有内容，没有纹理，也没有形状，从中无法读取出有意义的信息。 我们将这样一幅“三无”图像嵌入到另一幅普通图像里时就不易引起这幅图像在内容、纹理、形状上的太大改变，甚至觉察不出发生了改变，这样人眼就不易识别，从而逃出了第三方的视线，可以更好地保证水印信息的隐蔽性。 ②由于秘密图像是置乱以后的图像，第三方难以对它的内容、纹理、形状等进行统计分析，这样即便他们截获到了秘密图像，也对此无能为力。如果第三方企图对秘密图像进行反置乱运算，这也是非常困难的，因为图像置乱的方法很多，每种方法又可以使用不同的置乱算法，设置不同的参数，加密方可以根据自己的想法得到很多不同的结果，这给企图进行反置乱的第三方带来了很大的困难，需要耗费巨大的计算量来穷举测试各种可能性。 ③如果第三方进行反置乱运算不成，也可能会在隐蔽的载体上进行恶意修改，用置乱的方法也可以达到抵抗这些攻击的目的。因为合法接收者对秘密图像进行反置乱的时候，会使第三方在图像上所涂画的信息分散到画面的各个位置，形成点状的随机噪声，对视觉影响的程度不是很大。 ![二值图像加密算法之Arnold变换加密](http://www.jiamisoft.com/blog/wp-content/uploads/2013/10/1c408.png) 图1是在置乱图像上进行涂改和剪裁两种恶意修改以后，恢复出的秘密图像。可以看到，秘密图像的内容依然可见。为了使提取的图像信息更为清晰，还可以对破坏严重的图像进行中值滤波等方面的处理，以去除随机噪声。 当然，不应该忽视的是图像置乱在一定程度上增加了加密计算的复杂度和计算量，但是与非法攻击者可能花费的更大的计算量相比，图像置乱仍是一种值得付出代价的、相对安全的手段。正是因为如此，图像置乱技术在数字水印技术中具有非常重要的作用和意义。 **二、数字图像置乱的方法**...</p>
     <p class="actions">
-        <a href="/category/deeplearning/2021-02-07-google-ai-in-ML-and-TPU.html">Read More</a>
+        <a href="/category/image/2021-02-18-cat-mapping.html">Read More</a>
     </p>
 </article>
+
+    
+
+    
+        <!-- 
+    this is the complete index for articles, as you can see it on the index page.
+    Every Post type get's their own little settings.
+-->
+<article>
+    
+        
+                
+				<a href="/category/deeplearning/2021-02-05-reduced-neural-network-size-six-times-without-post-training.html" class="noline">
+				
+                   
+                    <img src="http://www.upare.net/tools/images/quote?savepath=quoteimg/brainscc&url=https://p3-tt.byteimg.com/origin/pgc-image/8af4c59af36540d3ab824582991c53fe.jpg">
+                    
+                </a>
+				
+        
+    
+    <span class="date">February 05, 2021</span>
+    <a href="/category/deeplearning/2021-02-05-reduced-neural-network-size-six-times-without-post-training.html">
+        <h1>模型压缩6倍，无需重训练</h1>
+    </a>
+    <p class="post-content">> RUDN 大学的数学家团队找到一种新方法，该方法能够让神经网络的大小减小到六分之一，且无需花费更多的资源重新训练。 ![模型压缩6倍，无需重训练：数学家团队提出量化新方法](https://p3-tt.byteimg.com/origin/pgc-image/8af4c59af36540d3ab824582991c53fe.jpg) 神经网络压缩是指在对神经网络性能影响不大的情况下，通过有关方法来减少网络的参数和存储空间，大体上可以分为近似，量化和剪枝三类方法。 近日，来自俄罗斯人民友谊大学（RUDN）的数学家团队找到一种方法，可以**将训练后的神经网络的大小减小六倍，而无需花费更多的资源来对其进行重新训练**。该方法基于找到初始系统及其简化版本中神经连接权重之间的相关性。这项研究的结果发表在《Optical Memory and Neural Networks》期刊上。 生命体中人工神经网络和神经元的结构是基于相同的原理。网络中的节点是相互连接的；其中一些接收信号，一些通过激活或抑制链中的下一个元素来发送信号。任何信号（例如图像或声音）的处理都需要很多网络元素及其之间的连接。但是，计算机模型只有有限的模型容量和存储空间。为了处理大量数据，这一领域的研究者必须发明各种方法来降低对模型能力的需求，包括所谓的量化。这有助于减少资源消耗，但需要对系统进行重新训练。RUDN 大学的一些数学家发现后者可以避免。 ![模型压缩6倍，无需重训练：数学家团队提出量化新方法](https://p1-tt.byteimg.com/origin/pgc-image/f9c3b94bc5fa480fb70c81af9df465d7.jpg) RUDN 大学...</p>
+    <p class="actions">
+        <a href="/category/deeplearning/2021-02-05-reduced-neural-network-size-six-times-without-post-training.html">Read More</a>
+    </p>
+</article>
+
+    
 
     
 
@@ -834,9 +866,9 @@ $(".post-content img").each(function(){
 	
 	var host = getHostname(src);
 	
-	if(host !=null && host != 'http://img.upare.net'){
+	if(host !=null && host != 'http://www.upare.net'){
 	
-		$(this).attr('src','http://www.upare.net/tools/images/quote?url='+src);
+		$(this).attr('src','http://www.upare.net/tools/images/quote?savepath=quoteimg/brainscc&url='+src);
 	}
 	
 });

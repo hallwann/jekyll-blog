@@ -7,15 +7,41 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>机器学习与流体动力学：谷歌AI利用「ML+TPU」实现流体模拟数量级加速</title>
+				<title>Arnold变换</title>
 				
 				
-					<description>&lt;p&gt;谷歌 AI 最近一项研究表明，利用机器学习和硬件加速器能够改进流体模拟，且不损害准确率或泛化性能。&lt;/p&gt;
+					<description>&lt;p&gt;在数字水印方案中，单纯地用各种信息隐藏加密算法对秘密信息进行加密是不安全的，因为攻击者只要破解了加密算法，就可能直接提取出秘密信息。针对这一点，我们提出在秘密信息隐藏之前，先对其进行置乱处理，使其失去本身原有的面目，再隐藏到载体中，以确保信息的安全性。以Fibonacci变换和Arnold变换的实验结果阐述了数字图像置乱方法在数字水印中的作用，并提了出一种利用Arnold反变换恢复图像的方法。&lt;/p&gt;
 </description>
 				
-				<pubDate>Sun, 07 Feb 2021 00:00:00 +0800</pubDate>
-				<link>/category/deeplearning/2021-02-07-google-ai-in-ML-and-TPU.html</link>
-				<guid isPermaLink="true">/category/deeplearning/2021-02-07-google-ai-in-ML-and-TPU.html</guid>
+				<pubDate>Thu, 18 Feb 2021 00:00:00 +0800</pubDate>
+				<link>/category/image/2021-02-18-cat-mapping.html</link>
+				<guid isPermaLink="true">/category/image/2021-02-18-cat-mapping.html</guid>
+			</item>
+		
+			<item>
+				<title>模型压缩6倍，无需重训练</title>
+				
+				
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;RUDN 大学的数学家团队找到一种新方法，该方法能够让神经网络的大小减小到六分之一，且无需花费更多的资源重新训练。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+				
+				<pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
+				<link>/category/deeplearning/2021-02-05-reduced-neural-network-size-six-times-without-post-training.html</link>
+				<guid isPermaLink="true">/category/deeplearning/2021-02-05-reduced-neural-network-size-six-times-without-post-training.html</guid>
+			</item>
+		
+			<item>
+				<title>理解矩阵运算</title>
+				
+				
+					<description>&lt;p&gt;刚学的时候，还蛮简单的，矩阵加法就是相同位置的数字加一下。&lt;/p&gt;
+</description>
+				
+				<pubDate>Thu, 10 Sep 2015 00:00:00 +0800</pubDate>
+				<link>/category/mathematics/2015-09-10-matrix-operation.html</link>
+				<guid isPermaLink="true">/category/mathematics/2015-09-10-matrix-operation.html</guid>
 			</item>
 		
 	</channel>
