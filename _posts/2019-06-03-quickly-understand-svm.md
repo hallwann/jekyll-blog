@@ -3,8 +3,8 @@ author: quote
 layout: post-full
 title: 快速看懂支持向量机
 featimg: https://p3-tt.byteimg.com/origin/pgc-image/b14f689acfb94e968e379121dee31bbb.jpg
-tags: [mapping]
-category: [image]
+tags: [svm]
+category: [deeplearning]
 ---
 # **1 前言**
 
